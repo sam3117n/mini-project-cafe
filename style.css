@@ -1,0 +1,345 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+nav {
+    background-color: #2b1b17;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+nav a:hover {
+    color: #e77a0e;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #edc692;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.btn {
+    display: inline-block;
+    background-color: #3e2723;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #6d4c41;
+}
+#menu {
+    padding: 70px 20px;
+    text-align: center;
+   
+}
+
+#menu h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.card {
+    width: 250px;
+    padding: 25px;
+    background-color: #f5e6d3;
+    border-radius: 10px;
+
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.card span {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+        #about {
+    flex-direction: column;
+    text-align: center;
+}
+    }
+
+}
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#reviews {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f5e6d3;
+}
+
+#reviews h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.review-card {
+    background-color: rgb(244, 237, 237);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.review-card h3 {
+    margin-top: 20px;
+}
+.stars {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.review-container {
+    grid-template-columns: 1fr;
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff8f0;
+}
+
+#contact h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+form button:hover {
+    background-color: #6d4c41;
+}
+footer {
+    background-color: #2b1b17;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    background-color: #2b1b17;
+    padding: 20px;
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#about {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    padding: 100px 10%;
+
+    background-color: #fff8f0;
+}
+
+.about-image {
+    position: relative;
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.small-title {
+    color: #8b5e3c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.about-text h2 {
+    font-size: 45px;
+    color: #3e2723;
+    margin: 10px 0 25px;
+}
+
+.about-text h2 span {
+    color: #a66a3f;
+}
+
+.about-intro {
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.about-text > p:not(.small-title) {
+    line-height: 1.7;
+    color: #555;
+}
+.about-features {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.about-features div {
+    text-align: center;
+}
+
+.about-features span {
+    font-size: 30px;
+}
+
+.about-features p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3e2723;
+}
+.coffee-badge {
+    position: absolute;
+
+    bottom: 25px;
+    right: -25px;
+
+    background-color: #3e2723;
+    color: white;
+
+    padding: 20px 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.coffee-badge strong {
+    display: block;
+    font-size: 28px;
+}
+
+.coffee-badge span {
+    font-size: 12px;
+}
+@media (max-width: 768px) {
+
+    #about {
+        flex-direction: column;
+        padding: 70px 20px;
+        gap: 40px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .coffee-badge {
+        right: 10px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 35px;
+    }
+
+    .about-features {
+        justify-content: center;
+        gap: 20px;
+    }
+}
